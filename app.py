@@ -287,8 +287,6 @@ PAGE_TEMPLATE = """
     .brand img { width:48px; height:48px; border-radius:12px; flex-shrink:0; }
     h1 { margin:0 0 4px; font-size:1.55rem; }
     .sub { margin:0; color:var(--muted); font-size:.95rem; }
-    .note { margin:16px 0 4px; padding:10px 14px; border-radius:10px; background:#0b1220;
-            border:1px solid var(--line); color:var(--muted); font-size:.85rem; }
     h2 { font-size:.85rem; text-transform:uppercase; letter-spacing:.08em; color:var(--accent);
          margin:26px 0 12px; }
     .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(210px, 1fr)); gap:14px; }
@@ -310,7 +308,6 @@ PAGE_TEMPLATE = """
     .advice { margin-top:10px; font-size:.92rem; }
     .error { margin-top:18px; padding:12px; border-radius:10px; background:#7f1d1d; color:#fecaca; }
     code { color:var(--accent); }
-    footer { margin-top:22px; color:var(--muted); font-size:.8rem; text-align:center; }
   </style>
 </head>
 <body>
@@ -322,7 +319,6 @@ PAGE_TEMPLATE = """
         <p class="sub">Estima la probabilidad de que un cliente contrate un depósito a plazo tras una campaña telefónica.</p>
       </div>
     </div>
-    <p class="note">El modelo usa solo información disponible <strong>antes</strong> de la llamada. La duración de la llamada se excluye a propósito porque solo se conoce al terminarla.</p>
     <form method="post" action="/predict">
       {% for title, names in sections %}
       <h2>{{ title }}</h2>
@@ -365,7 +361,6 @@ PAGE_TEMPLATE = """
       </div>
     </div>
     {% endif %}
-    <footer>Envía JSON a <code>/predict</code> &middot; estado en <code>/health</code></footer>
   </div>
 </body>
 </html>
