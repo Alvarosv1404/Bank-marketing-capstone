@@ -274,7 +274,7 @@ El servicio se despliega **tal cual** en [Vercel](https://vercel.com) con el pla
 Comprueba que responde:
 
 ```bash
-curl https://TU-URL.vercel.app/health
+curl https://bank-marketing-capstone.vercel.app/health
 ```
 
 ```json
