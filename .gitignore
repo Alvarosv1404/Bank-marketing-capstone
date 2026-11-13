@@ -1,0 +1,21 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb~
+jupyter_execute/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel/
